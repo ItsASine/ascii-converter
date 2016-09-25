@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ASCII Converter</title>
+    <meta name="description" content="Convert between ASCII, Hexidecimal, Decimal, and Binary easily!">
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">ASCII Converter</h1>
+        <h3>Convert between ASCII, Hexidecimal, Decimal, and Binary easily!</h3>
+        <p>Just enter the character(s) you want to convert in one of the boxes below to view the conversions</p>
+        <p>Whitespace in ASCII input is counted as included characters to translate and hex/decimal/binary numbers should be separated by a space</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h2>ASCII</h2>
+            <label for="ascii" class="sr-only">ASCII</label>
+            <input type="text" id="ascii" class="form-control" placeholder="Enter ASCII Character">
+            <button class="btn btn-md btn-primary btn-block" type="submit" id="btn-ascii">Submit</button>
+            <h3 id="ascii-result" class="text-primary text-center"></h3>
+        </div>
+
+        <div class="col-md-3">
+            <h2>Hexadecimal</h2>
+            <label for="hex" class="sr-only">Hexadecimal</label>
+            <input type="text" id="hex" class="form-control" placeholder="Enter Hexadecimal Value">
+            <button class="btn btn-md btn-primary btn-block" type="submit" id="btn-hex">Submit</button>
+            <h3 id="hex-result" class="text-primary text-center"></h3>
+        </div>
+
+        <div class="col-md-3">
+            <h2>Decimal</h2>
+            <label for="decimal" class="sr-only">Decimal</label>
+            <input type="text" id="decimal" class="form-control" placeholder="Enter Decimal Number">
+            <button class="btn btn-md btn-primary btn-block" type="submit" id="btn-decimal">Submit</button>
+            <h3 id="decimal-result" class="text-primary text-center"></h3>
+        </div>
+
+        <div class="col-md-3">
+            <h2>Binary</h2>
+            <label for="binary" class="sr-only">Binary</label>
+            <input type="text" id="binary" class="form-control" placeholder="Enter Binary Number">
+            <button class="btn btn-md btn-primary btn-block" type="submit" id="btn-binary">Submit</button>
+            <h3 id="binary-result" class="text-primary text-center"></h3>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<footer>
+    <p class="text-center">Want a new feature? File a request <a href="https://github.com/ItsASine/ascii-converter/issues">here</a></p>
+</footer>
+</body>
+</html>
